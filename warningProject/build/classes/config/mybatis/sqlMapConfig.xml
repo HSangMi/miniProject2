@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 설정파일에서 사용할 프로퍼티의 파일의 경로 지정: classpath -->
+	<properties resource="config/mybatis/db.properties"/>
+	
+	<!-- SQL의 결과를 담을 VO 객체들의 별칭을 설정하여 사용의 편의를 도모  -->
+	<typeAliases>
+		<typeAlias alias="Board" type="kr.co.mlec.vo.BoardVO" />
+		<typeAlias alias="File" type="kr.co.mlec.vo.FileVO" />
+		<typeAlias alias="User" type="kr.co.mlec.vo.UserVO" />
+		<typeAlias alias="Comment" type="kr.co.mlec.vo.CommentVO" />
+		<typeAlias alias="Recommend" type="kr.co.mlec.vo.RecommendVO" />
+	</typeAliases>
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}"/>
+				<property name="url" value="${url}"/>
+				<property name="username" value="${username}"/>
+				<property name="password" value="${password}"/>
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<mapper resource="config/sqlmap/oracle/board.xml"/>
+		<mapper resource="config/sqlmap/oracle/user.xml"/>
+	</mappers>
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
