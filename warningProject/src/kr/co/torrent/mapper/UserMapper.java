@@ -1,6 +1,6 @@
-package kr.co.mlec.mapper;
+package kr.co.torrent.mapper;
 
-import kr.co.mlec.vo.UserVO;
+import kr.co.torrent.vo.UserVO;
 
 public interface UserMapper {
 	public UserVO selectLogin(UserVO param) throws Exception;

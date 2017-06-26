@@ -1,4 +1,4 @@
-package kr.co.mlec.board.controller;
+package kr.co.torrent.controller;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -13,17 +13,19 @@ import org.springframework.web.RequestParam;
 import org.springframework.web.WebUtil;
 
 import com.google.gson.Gson;
-import com.oreilly.servlet.MultipartRequest;
 
 import common.db.MyAppSqlConfig;
-import kr.co.mlec.mapper.BoardMapper;
+import kr.co.torrent.mapper.BoardMapper;
+import kr.co.torrent.vo.BoardVO;
+import kr.co.torrent.vo.CommentVO;
+import kr.co.torrent.vo.FileVO;
 
 @Controller
-public class BoardController4 {
+public class MainController {
 	private SqlSession session = null;
 	private BoardMapper mapper = null;
 	
-	public BoardController4() {
+	public MainController() {
 		session = MyAppSqlConfig.getSqlSessionInstance();
 		mapper = session.getMapper(BoardMapper.class);
 	}

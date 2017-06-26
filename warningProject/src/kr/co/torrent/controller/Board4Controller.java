@@ -1,4 +1,4 @@
-package kr.co.mlec.board.controller;
+package kr.co.torrent.controller;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -16,14 +16,14 @@ import com.google.gson.Gson;
 import com.oreilly.servlet.MultipartRequest;
 
 import common.db.MyAppSqlConfig;
-import kr.co.mlec.mapper.BoardMapper;
+import kr.co.torrent.mapper.BoardMapper;
 
 @Controller
-public class BoardController3 {
+public class Board4Controller {
 	private SqlSession session = null;
 	private BoardMapper mapper = null;
 	
-	public BoardController3() {
+	public Board4Controller() {
 		session = MyAppSqlConfig.getSqlSessionInstance();
 		mapper = session.getMapper(BoardMapper.class);
 	}

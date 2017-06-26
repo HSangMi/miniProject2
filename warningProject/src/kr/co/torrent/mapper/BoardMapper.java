@@ -1,4 +1,4 @@
-package kr.co.mlec.mapper;
+package kr.co.torrent.mapper;
 
 import java.util.List;
 

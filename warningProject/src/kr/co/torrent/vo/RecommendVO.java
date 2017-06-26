@@ -1,4 +1,4 @@
-package kr.co.mlec.vo;
+package kr.co.torrent.vo;
 
 public class RecommendVO {
 	private int recommendNo;

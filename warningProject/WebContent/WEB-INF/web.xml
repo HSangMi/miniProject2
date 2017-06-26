@@ -37,7 +37,7 @@
   	<servlet-class>org.springframework.web.DispatcherServlet</servlet-class>
   	<init-param>
   		<param-name>base-package</param-name>
-  		<param-value>kr.co.mlec</param-value>
+  		<param-value>kr.co.torrent</param-value>
   	</init-param>
   	<init-param>
   		<param-name>prefix</param-name>
@@ -48,7 +48,7 @@
   	<init-param>
   		<param-name>suffix</param-name>
   		<param-value>
-  			.jsp
+  			.html
   		</param-value>
   	</init-param>
   </servlet>

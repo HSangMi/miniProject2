@@ -1,4 +1,4 @@
-package kr.co.mlec.filter;
+package kr.co.torrent.filter;
 
 import java.io.IOException;
 
@@ -24,7 +24,7 @@ public class EncodingFilter implements Filter {
 			ServletResponse response, 
 			FilterChain chain)
 			throws IOException, ServletException {
-		// POST ë°©ì‹ì¼ ê²½ìš° ì ìš©
+		// POST ë°©ì‹?¼ ê²½ìš° ? ?š©
 		HttpServletRequest hRequest = (HttpServletRequest)request;
 		String method = hRequest.getMethod();
 		if ("POST".equals(method)) {
