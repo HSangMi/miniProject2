@@ -1,6 +1,6 @@
 package kr.co.torrent.vo;
 
-public class RecommendVO {
+public class LikeVO {
 	private int recommendNo;
 	private int no;
 	private String userId;

@@ -10,8 +10,8 @@
 		<typeAlias alias="Board" type="kr.co.mlec.vo.BoardVO" />
 		<typeAlias alias="File" type="kr.co.mlec.vo.FileVO" />
 		<typeAlias alias="User" type="kr.co.mlec.vo.UserVO" />
-		<typeAlias alias="Comment" type="kr.co.mlec.vo.CommentVO" />
-		<typeAlias alias="Recommend" type="kr.co.mlec.vo.RecommendVO" />
+		<typeAlias alias="Reply" type="kr.co.mlec.vo.ReplyVO" />
+		<typeAlias alias="Like" type="kr.co.mlec.vo.LikeVO" />
 	</typeAliases>
 	
 	<environments default="development">
